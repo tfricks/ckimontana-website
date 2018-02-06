@@ -10,6 +10,12 @@ module.exports = {
   pathPrefix: "/",
   plugins: [
     {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`
+      }
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/pages`,
@@ -78,7 +84,6 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-twitter",
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-netlify-cms"
+    "gatsby-transformer-sharp"
   ]
 };
