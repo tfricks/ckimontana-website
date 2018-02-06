@@ -1,11 +1,4 @@
 backend:
-<<<<<<< Updated upstream
-  name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
-  media_folder: "static/img/uploads/"
-  public_folder: "/img/uploads/"
-=======
   name: github
   repo: tfricks/ckimontana-website
 media_folder: static/img/uploads
->>>>>>> Stashed changes
